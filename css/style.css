@@ -90,3 +90,11 @@
 
 }
 
+.end{
+    display: none;
+    position: absolute;
+    left: 700px;
+    top: 300px;
+    font-size: 100px;
+    color: #E0F6FF;
+}

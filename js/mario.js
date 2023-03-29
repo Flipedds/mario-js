@@ -3,7 +3,9 @@ const mario = document.querySelector('.mario')
         const audio = document.querySelector('audio')
         const cloud = document.querySelector('.cloud')
         const cloud2 = document.querySelector('.cloud2')
-        
+        const board = document.querySelector('.game-board')
+        const end = document.querySelector('.end')
+
         const jump = () => {
             audio.src= 'audios/mario-jump.mp3';
             audio.play();
@@ -27,6 +29,8 @@ const mario = document.querySelector('.mario')
                 cloud.style.animation = 'none';
                 cloud2.style.animation = 'none';
 
+                board.style.background = 'black';
+                end.style.display = 'block';
                 mario.src = 'img/death.png';
                 mario.style.width = '150px';
                 mario.style.marginLeft = '50px';
@@ -40,6 +44,6 @@ const mario = document.querySelector('.mario')
 
         document.addEventListener('keypress', function (e) {
             if (e.key === 'Enter') {              
-                
+                location.reload();
             }
         })
