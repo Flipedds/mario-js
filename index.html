@@ -13,9 +13,25 @@
         <img src="img/pipe.png" class="pipe">
         <audio src=""></audio>
         <img class="cloud" src="img/nuvem_sprite.png"> <br>
-        <img class="cloud2" src="img/nuvem_sprite.png">
+        <img class="cloud2" src="img/nuvem_sprite.png"> <br>
         <h2 class="end">Game over</h2>
+        <div class="points"><h2>Pontos<h2 id="counter">0</h2></h2></div>
+
+        <div class="final-points"><h2>Pontos:&nbsp<h2 id="final">0</h2></h2></div>
+
+        <div class="key"><h2>PRESS ENTER KEY</h2></div>
     </div>
+
+    <button onclick="showPopup()">Controles</button>
+    <div class="popup">
+        <div class="popup-message">
+          <p> Controles <br> 
+              Espaço - Pular <br>
+              Enter - Reiniciar
+          </p>
+          <button onclick="hidePopup()">Fechar</button>
+        </div>
+      </div>
     <script src="js/mario.js" defer></script>
 </body>
 </html>

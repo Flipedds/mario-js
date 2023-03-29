@@ -5,7 +5,7 @@
 }
 .game-board{
     width: 100%;
-    height: 600px;
+    height: 860px;
     border-bottom: 15px solid green;
     margin: 0 auto;
     position: relative;
@@ -41,7 +41,7 @@
 
 .cloud{
     width: 150px;
-    top: 20px;
+    top: 60px;
     position: absolute;
     animation: cloud-movement 1.4s infinite linear;
 }
@@ -59,7 +59,7 @@
 .cloud2{
     width: 150px;
     position: absolute;
-    top: 130px;
+    top: 160px;
     animation: cloud-movement 1.2s infinite linear;
 }
 
@@ -90,6 +90,8 @@
 
 }
 
+
+
 .end{
     display: none;
     position: absolute;
@@ -97,4 +99,47 @@
     top: 300px;
     font-size: 100px;
     color: #E0F6FF;
+}
+
+.points{
+    position: relative;
+    left: 1800px;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Define a transparência do fundo */
+    display: none; /* Esconde o pop-up por padrão */
+  }
+
+  /* Estilo da mensagem dentro do pop-up */
+  .popup-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .final-points{
+    color: #fff;
+    display: none;
+    position: absolute;
+    left: 857px;
+    top: 440px;      
+    font-size: 25px;
+}
+.key{
+    color: #fff;
+    display: none;
+    position: absolute;
+    left: 750px;
+    top: 700px;      
+    font-size: 25px;
 }
