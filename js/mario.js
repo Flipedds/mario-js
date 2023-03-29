@@ -30,6 +30,8 @@ const mario = document.querySelector('.mario')
                 cloud2.style.animation = 'none';
 
                 board.style.background = 'black';
+                cloud.style.display = 'none';
+                cloud2.style.display = 'none';
                 end.style.display = 'block';
                 mario.src = 'img/death.png';
                 mario.style.width = '150px';
